@@ -1,0 +1,2 @@
+{'title':'全新原装','place':'其他海外地区','brand':'YASKAWA/安川','sizeX':'100','sizeY':'200','excitation':'永磁式','model':'gyc','installMethod':'法兰','temperature':'0','lineLength':'0','encodeType':'16','rotation':'360','axlehead':'直轴','scene':'多功能','weight':'1','protectlevel':'IP65','power':'100','torque':'2','voltage':'24','electric':'2','speed':'3000','gear':'Not','originPlace':'海外及港澳台','dispatchPlace':'中国'}
+
