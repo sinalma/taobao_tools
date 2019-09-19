@@ -4,9 +4,9 @@ import os
 
 # describe (string , number,eg)
 # MARK = '柒柒工控 17717458762'
-MARK = '阳明工控 181124988815'
+MARK = '阳明工控 18124988815'
 # all operation from this path , is root and nesscessary a directory
-ROOT_PATH = 'C:/Users/sinalma/Desktop/TMP/'
+ROOT_PATH = 'C:/Users/sinalma/Desktop/TMPU/'
 # want to rename string , wait make down
 MODEL = ''
 # thumbnail image size,(px,px)
