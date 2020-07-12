@@ -1,6 +1,6 @@
 import os 
 from selenium import webdriver
-driver = webdriver.Chrome("D:/Programming/python/chromedriver.exe") 
+driver = webdriver.Chrome("C:/Program/pythonpackage/chromedriver.exe") 
 driver.maximize_window()
 from os import path
 from selenium.webdriver.common.action_chains import ActionChains
