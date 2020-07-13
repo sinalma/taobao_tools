@@ -1,10 +1,9 @@
 from PIL import Image, ImageDraw, ImageFont
 import os
-import random
 
 
 shopName = '阳明工控'
-phone = '1824988815'
+phone = ''
 # 楷体
 fontPathS1 = './1.ttf'
 # 汇文筑地五号明朝体
@@ -40,8 +39,7 @@ def add_text_to_image(image, text):
             image_draw.text((i, j+105), phone, font=fontS2, fill=(0, 0, 0, 100))
     
     # text_overlay = text_overlay.transform((200, 200), Image.EXTENT, (0, 0, 300, 0))
-    
-    text_overlay = text_overlay.rotate(random.randint(4,70)*-5)
+    text_overlay = text_overlay.rotate(-65)
     image_with_text = Image.alpha_composite(rgba_image, text_overlay)
     
     # 裁切图片
@@ -96,12 +94,12 @@ if __name__ == '__main__':
     for x in range(0,count):
         pass
         img = Image.open(u''+picPath + allFiles[x])
-        print(allFiles[x])
+        # print(allFiles[x])
         img = img.resize((imgW,imgH))
-        im_after = add_text_to_image(img, shopName)
+        # im_after = add_text_to_image(img, shopName)
         # im_after = add_text_to_image(img, u'18124988815')
         # im_after.show()
-        im_after.save(u''+picPath+'deal.png')
-        im_after = add_text_to_image2(u''+picPath+'deal.png')
+        # im_after.save(u''+picPath+'deal.png')
+        im_after = add_text_to_image2(u''+picPath + allFiles[x])
         im_after.save(u''+picPath+allFiles[x])
     
