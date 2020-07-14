@@ -3,7 +3,7 @@ import os
 
 
 shopName = '阳明工控'
-phone = ''
+phone = '18124988815'
 # 楷体
 fontPathS1 = './1.ttf'
 # 汇文筑地五号明朝体
