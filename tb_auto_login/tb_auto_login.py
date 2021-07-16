@@ -16,7 +16,7 @@ class taobao_infos:
         options.add_experimental_option('excludeSwitches', ['enable-automation']) # 此步骤很重要，设置为开发者模式，防止被各大网站识别出来使用了Selenium
 
         self.browser = webdriver.Chrome(executable_path=chromedriver_path, options=options)
-        self.wait = WebDriverWait(self.browser, 10) #超时时长为10s
+        
 
 
     #登录淘宝
@@ -24,6 +24,7 @@ class taobao_infos:
 
         # 打开网页
         self.browser.get(self.url)
+        self.wait = WebDriverWait(self.browser, 10) #超时时长为10s
 
         # 等待 密码登录选项 出现
         password_login = self.wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, '.qrcode-login > .login-links > .forget-pwd')))
@@ -63,7 +64,7 @@ class taobao_infos:
 if __name__ == "__main__":
     
 
-    chromedriver_path = "C:/Program/pythonpackage/chromedriver.exe" #改成你的chromedriver的完整路径地址
+    chromedriver_path = "C:/Users/sinalma/Desktop/taobao_tools/tb_auto_login/chromedriver.exe" #改成你的chromedriver的完整路径地址
     weibo_username = "sinalma@foxmail.com" #改成你的微博账号
     weibo_password = "w1schd1s8in7b" #改成你的微博密码
 

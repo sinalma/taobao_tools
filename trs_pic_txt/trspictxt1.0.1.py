@@ -21,8 +21,8 @@ imgW = 800
 imgH = 800
 # value 
 RED = '#FF0000'
-IsFanWM = True
-
+IsFanWM = False
+# False
 
 
 def add_text_to_image(image, text):
@@ -60,9 +60,10 @@ def add_text_to_image2(path):
     canvas = Image.open(path)
     canvas = canvas.resize((imgW,imgH))
     draw = ImageDraw.Draw(canvas)
-    textX = (imgW - text_width) / 2
-    textY = (imgH - text_height) / 2 
-    phoneX = (imgW - phone_width) / 2
+    randomXY = random.randint(-20,20)
+    textX = (imgW - text_width) / 2 + randomXY
+    textY = (imgH - text_height) / 2 + randomXY
+    phoneX = (imgW - phone_width) / 2 + randomXY
     draw.text((textX,textY),shopName,font=fontS1,fill=RED)
     draw.text((phoneX,textY+20+text_height),phone,font=fontS1,fill=RED)
     return canvas
@@ -126,7 +127,7 @@ if __name__ == '__main__':
                 print('first servo model is '+ firstServoModel)
             img = Image.open(u''+picPath + allFiles[x])
             print(allFiles[x])
-            img = img.resize((imgW,imgH))
+            img = img.resize((imgW,imgH))           
             # im_after = add_text_to_image(img, u'18124988815')
             # im_after.show()
             # curDelFileName = picPath + allFiles[x]
