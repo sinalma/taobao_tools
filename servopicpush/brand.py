@@ -19,8 +19,8 @@ class brand:
 		self.model = model
 
 	
-	yaskawa_I = ['SGM','SGMP','SGMCS','SGMM']
-	yaskawa_II = ['SGMPH','SGM7J','SGM7P','SGMPS','SGMS','SGMG','SGMAH','SGMGH','SGMAV','SGMSV','SGMRV','SGMGV','SGMJV','SGMMV','SGMAJ']
+	yaskawa_I = ['SGM','SGMP','SGMCS','SGMM','SGME','SGML']
+	yaskawa_II = ['SGMPH','SGM7J','SGM7A','SGM7G','SGM7P','SGMPS','SGMS','SGMG','SGMAH','SGMGH','SGMAV','SGMSV','SGMRV','SGMGV','SGMJV','SGMMV','SGMAJ','SGMRS','SGMSH']
 	yaskawa_III = ['SGDS']
 	yaskawa_IV = ['SGDM','SGDH','SGDA','SJDE','SGDB']
 	yaskawa_V = ['SGDV','SGD7S']
